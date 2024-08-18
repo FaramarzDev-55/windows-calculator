@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faramarz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Font-Awesome-6.x/css/all.min.css">
+</head>
+<body>
+    <div class="app">
+        <div class="header">
+            <div class="left">
+                <div class="icon"></div>
+                <span>Calculator</span>
+            </div>
+            <div class="right">
+                <div class="item">-</div>
+                <div class="item">~</div>
+                <div class="item red">x</div>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="left">
+            <div class="icon more">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <h2>Standard</h2>
+            <div class="icon min">
+                <i class="fa-solid fa-minimize"></i>
+            </div>
+            </div>
+            <div class="right">
+                <div class="icon history">
+                    <i class="fa-solid fa-history"></i>
+                </div>
+            </div>
+        </div>
+        <div class="view">
+            <div class="screen-last" id="lastOperationScreen"></div>
+          <div class="screen-current" id="currentOperationScreen">0</div>
+        </div>
+        <div class="ms">
+            <div class="item grey">MC</div>
+            <div class="item grey">MR</div>
+            <div class="item">M+</div>
+            <div class="item">M-</div>
+            <div class="item">MS</div>
+            <div class="item grey">M <i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="btns">
+            <div class="row">
+                <button type="button">%</button>
+                <button type="button">CE</button>
+                <button type="button" id="clearBtn" onclick="this.blur();">C</button>
+                <button id="deleteBtn" type="button" onclick="this.blur();"><i class="fa-solid fa-backspace"></i></button>
+            </div>
+            <div class="row">
+                <button type="button">1x</button>
+                <button type="button">x2</button>
+                <button type="button">2%</button>
+                <button type="button" onclick="this.blur();" data-operator>÷</button>
+            </div>
+            <div class="row">
+                <button type="button" onclick="this.blur();" data-number>7</button>
+                <button type="button" onclick="this.blur();" data-number>8</button>
+                <button type="button" onclick="this.blur();" data-number>9</button>
+                <button type="button" onclick="this.blur();" data-operator>×</button>
+            </div>
+            <div class="row">
+                <button type="button" onclick="this.blur();" data-number>4</button>
+                <button type="button" onclick="this.blur();" data-number>5</button>
+                <button type="button" onclick="this.blur();" data-number>6</button>
+                <button type="button" onclick="this.blur();" data-operator>−</button>
+            </div>
+            <div class="row">
+                <button type="button" onclick="this.blur();" data-number>1</button>
+                <button type="button" onclick="this.blur();" data-number>2</button>
+                <button type="button" onclick="this.blur();" data-number>3</button>
+                <button type="button" onclick="this.blur();" data-operator>+</button>
+            </div>
+            <div class="row">
+                <button type="button" onclick="this.blur();">+-</button>
+                <button type="button" onclick="this.blur();" data-number>0</button>
+                <button type="button" onclick="this.blur();" id="pointBtn">.</button>
+                <button class="eq" type="button" onclick="this.blur();" id="equalsBtn">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
